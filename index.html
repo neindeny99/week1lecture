@@ -1,14 +1,99 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <title>페페 소개 페이지</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8f5;
+            text-align: center;
+        }
+        header {
+            background-color: #2e8b57;
+            color: white;
+            padding: 20px;
+        }
+        section {
+            padding: 30px;
+        }
+        img {
+            width: 250px;
+            border-radius: 15px;
+        }
+        .card {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            width: 60%;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #2e8b57;
+            color: white;
+            padding: 10px;
+            margin-top: 30px;
+        }
+        button {
+            background-color: #3cb371;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2e8b57;
+        }
+    </style>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+
+<header>
+    <h1>🐸 페페(Pepe the Frog)</h1>
+    <p>인터넷 밈의 대표 캐릭터</p>
+</header>
+
+<section>
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/6/63/Feels_good_man.jpg" alt="페페 이미지">
+        <h2>페페란?</h2>
+        <p>
+            페페는 만화 캐릭터로 시작해 인터넷 밈(meme)으로 큰 인기를 얻은 개구리 캐릭터입니다.
+            다양한 표정과 상황으로 변형되며 온라인 문화에서 널리 사용되고 있습니다.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>대표 밈</h2>
+        <ul style="list-style: none; padding: 0;">
+            <li>🙂 Feels Good Man</li>
+            <li>😢 Sad Pepe</li>
+            <li>😡 Angry Pepe</li>
+            <li>😎 Cool Pepe</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>재미 버튼</h2>
+        <button onclick="showMessage()">클릭해보세요!</button>
+        <p id="message"></p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Pepe Fan Page</p>
+</footer>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").innerText = "Feels Good Man! 🐸";
+    }
+</script>
+
 </body>
 </html>
