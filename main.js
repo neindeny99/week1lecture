@@ -11,6 +11,7 @@ function toggleDarkMode() {
     }
 }
 
+// 구글 검색 결과(pepe 짤)에서 볼 수 있는 다양한 페페 이미지들
 const pepeImages = [
     "https://upload.wikimedia.org/wikipedia/en/6/63/Feels_good_man.jpg",
     "https://i.kym-cdn.com/entries/icons/original/000/000/142/feelsgoodman.png",
@@ -19,7 +20,15 @@ const pepeImages = [
     "https://i.kym-cdn.com/photos/images/newsfeed/000/943/273/608.jpg",
     "https://i.kym-cdn.com/photos/images/newsfeed/001/043/247/5e3.jpg",
     "https://i.kym-cdn.com/photos/images/newsfeed/000/915/652/b4d.jpg",
-    "https://i.kym-cdn.com/photos/images/newsfeed/001/006/537/10b.jpg"
+    "https://i.kym-cdn.com/photos/images/newsfeed/001/006/537/10b.jpg",
+    "https://i.kym-cdn.com/photos/images/newsfeed/001/502/766/5e7.jpg",
+    "https://i.kym-cdn.com/photos/images/newsfeed/001/010/834/62d.jpg",
+    "https://i.kym-cdn.com/photos/images/newsfeed/001/240/132/d90.png",
+    "https://i.kym-cdn.com/photos/images/newsfeed/000/908/334/1c9.jpg",
+    "https://i.kym-cdn.com/photos/images/newsfeed/001/476/689/e95.jpg",
+    "https://i.kym-cdn.com/photos/images/newsfeed/000/943/274/394.jpg",
+    "https://i.kym-cdn.com/photos/images/newsfeed/001/041/123/276.jpg",
+    "https://i.kym-cdn.com/photos/images/newsfeed/001/168/682/c2f.jpg"
 ];
 
 function showRandomPepe() {
@@ -34,11 +43,14 @@ function showRandomPepe() {
 }
 
 // Add fadeIn animation style
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(10px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-`;
-document.head.appendChild(style);
+if (!document.getElementById('fade-in-style')) {
+    const style = document.createElement('style');
+    style.id = 'fade-in-style';
+    style.textContent = `
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    `;
+    document.head.appendChild(style);
+}
