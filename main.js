@@ -11,8 +11,16 @@ function toggleDarkMode() {
     }
 }
 
-// pepefolder 내의 로컬 이미지 리스트 (30장)
-const pepeImages = Array.from({length: 30}, (_, i) => `pepefolder/pepe_${i}.jpg`);
+// pepefolder 내의 최신 이미지 리스트 (업데이트됨)
+const pepeImages = [
+    "pepefolder/feelsgoodman.png", "pepefolder/pepe_0.jpg", "pepefolder/pepe_1.jpg", "pepefolder/pepe_2.jpg",
+    "pepefolder/pepe_3.jpg", "pepefolder/pepe_4.jpg", "pepefolder/pepe_5.jpg", "pepefolder/pepe_6.jpg",
+    "pepefolder/pepe_7.jpg", "pepefolder/pepe_8.jpg", "pepefolder/pepe_10.jpg", "pepefolder/pepe_11.jpg",
+    "pepefolder/pepe_12.jpg", "pepefolder/pepe_13.jpg", "pepefolder/pepe_14.jpg", "pepefolder/pepe_15.jpg",
+    "pepefolder/pepe_17.jpg", "pepefolder/pepe_18.jpg", "pepefolder/pepe_20.jpg", "pepefolder/pepe_21.jpg",
+    "pepefolder/pepe_22.jpg", "pepefolder/pepe_23.jpg", "pepefolder/pepe_24.jpg", "pepefolder/pepe_25.jpg",
+    "pepefolder/pepe_26.jpg", "pepefolder/pepe_27.jpg", "pepefolder/pepe_28.jpg", "pepefolder/pepe_29.jpg"
+];
 
 function showRandomPepe() {
     const container = document.getElementById("pepe-container");
