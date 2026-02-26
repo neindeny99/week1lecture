@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>페페 소개 페이지</title>
+    <title>Pepe Archive: 페페의 역사와 문화적 가치</title>
+    <meta name="description" content="인터넷 밈의 상징, 페페 더 프로그(Pepe the Frog)의 기원부터 전 세계적인 문화 현상까지 상세히 다루는 팬 아카이브 사이트입니다.">
     <meta name="google-adsense-account" content="ca-pub-3653045816060099">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3653045816060099"
      crossorigin="anonymous"></script>
@@ -11,79 +12,98 @@
 </head>
 <body>
 
-<div class="dark-mode-toggle">
-    <button onclick="toggleDarkMode()">다크 모드로 전환</button>
-</div>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#" class="nav-logo">🐸 Pepe Archive</a>
+        <ul class="nav-menu">
+            <li><a href="#history">페페의 역사</a></li>
+            <li><a href="#culture">문화적 영향</a></li>
+            <li><a href="#random">재미버튼</a></li>
+            <li><a href="#contact">제휴문의</a></li>
+        </ul>
+        <button class="theme-btn" onclick="toggleDarkMode()">모드 전환</button>
+    </div>
+</nav>
 
-<header>
-    <h1>🐸 페페(Pepe the Frog)</h1>
-    <p>인터넷 밈의 대표 캐릭터</p>
+<header class="hero-section">
+    <h1>인터넷 문화의 아이콘, 페페 더 프로그</h1>
+    <p>단순한 캐릭터를 넘어 시대의 감정을 대변하는 페페의 모든 것</p>
 </header>
 
-<section>
-    <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/en/6/63/Feels_good_man.jpg" alt="페페 이미지">
-        <h2>페페란?</h2>
+<main class="container">
+    <!-- 고품질 텍스트 콘텐츠 섹션 1 -->
+    <section id="history" class="content-card">
+        <h2>1. 페페의 기원과 진화</h2>
         <p>
-            페페는 만화 캐릭터로 시작해 인터넷 밈(meme)으로 큰 인기를 얻은 개구리 캐릭터입니다.
-            다양한 표정과 상황으로 변형되며 온라인 문화에서 널리 사용되고 있습니다.
+            페페 더 프로그(Pepe the Frog)는 2005년 아티스트 맷 퓨리(Matt Furie)의 만화 '보이즈 클럽(Boy's Club)'에서 처음 등장했습니다. 
+            당시 페페는 "Feels good man"이라는 대사와 함께 평화롭고 느긋한 성격을 가진 캐릭터로 묘사되었습니다. 
         </p>
-    </div>
+        <p>
+            하지만 2008년경 4chan과 같은 온라인 커뮤니티를 통해 밈(Meme)으로 확산되면서, 페페는 수만 가지의 변형된 모습을 갖게 되었습니다. 
+            이는 디지털 시대에서 캐릭터가 원작자의 손을 떠나 대중의 집단 지성에 의해 어떻게 재창조될 수 있는지를 보여주는 대표적인 사례입니다.
+        </p>
+    </section>
 
-    <div class="card">
-        <h2>대표 밈</h2>
-        <ul style="list-style: none; padding: 0;">
-            <li>🙂 Feels Good Man</li>
-            <li>😢 Sad Pepe</li>
-            <li>😡 Angry Pepe</li>
-            <li>😎 Cool Pepe</li>
-        </ul>
-    </div>
+    <!-- 고품질 텍스트 콘텐츠 섹션 2 -->
+    <section id="culture" class="content-card">
+        <h2>2. 문화적 영향력과 사회적 상징성</h2>
+        <p>
+            페페는 전 세계적으로 가장 인지도 높은 밈 중 하나입니다. 슬픈 페페(Sad Pepe), 화난 페페(Angry Pepe), 희귀 페페(Rare Pepe) 등 
+            다양한 감정 표현은 온라인 사용자들 사이에서 복잡한 감정을 전달하는 새로운 언어가 되었습니다.
+        </p>
+        <p>
+            특히 '희귀 페페' 현상은 디지털 자산의 가치를 부여하는 NFT 시장의 선구자적 역할을 하기도 했습니다. 
+            본 사이트는 이러한 페페의 긍정적인 문화적 유산을 보존하고 공유하는 것을 목적으로 합니다.
+        </p>
+    </section>
 
-    <div class="card">
-        <h2>재미 버튼</h2>
-        <button onclick="showRandomPepe()">재미버튼</button>
-        <div id="pepe-container" style="margin-top: 20px; min-height: 200px;">
-            <p id="message"></p>
+    <!-- 상호작용 섹션 -->
+    <section id="random" class="content-card">
+        <h2>3. 페페 랜덤 갤러리</h2>
+        <p>버튼을 눌러 다양한 페페의 모습을 감상해보세요.</p>
+        <button class="action-btn" onclick="showRandomPepe()">재미버튼</button>
+        <div id="pepe-container" class="pepe-viewer">
+            <!-- 랜덤 이미지가 여기에 표시됩니다 -->
         </div>
-    </div>
+    </section>
 
-    <div class="card">
-        <h2>제휴 문의</h2>
-        <p>페페와 함께하고 싶으신가요? 아래 폼을 통해 메시지를 남겨주세요!</p>
+    <!-- 제휴 문의 섹션 -->
+    <section id="contact" class="content-card">
+        <h2>4. 파트너십 및 제휴 문의</h2>
+        <p>콘텐츠 협업이나 광고 문의는 아래 폼을 이용해 주세요.</p>
         <form action="https://formspree.io/f/xreajkwe" method="POST" class="contact-form">
-            <input type="email" name="email" placeholder="이메일 주소" required>
-            <textarea name="message" placeholder="문의 내용" required></textarea>
-            <button type="submit">문의하기</button>
+            <input type="email" name="email" placeholder="답변받을 이메일 주소" required>
+            <textarea name="message" placeholder="문의하실 내용을 상세히 적어주세요." required></textarea>
+            <button type="submit" class="action-btn">문의 제출하기</button>
         </form>
-    </div>
+    </section>
 
-    <div class="card">
-        <h2>댓글 남기기</h2>
+    <!-- 댓글 섹션 -->
+    <section class="content-card">
+        <h2>5. 커뮤니티 의견</h2>
         <div id="disqus_thread"></div>
         <script>
-            /**
-            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-            /*
-            var disqus_config = function () {
-            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-            };
-            */
-            (function() { // DON'T EDIT BELOW THIS LINE
+            (function() { 
             var d = document, s = d.createElement('script');
             s.src = 'https://pefe.disqus.com/embed.js';
             s.setAttribute('data-timestamp', +new Date());
             (d.head || d.body).appendChild(s);
             })();
         </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
-</section>
+    </section>
+
+    <!-- 필수 정보 섹션 (AdSense 통과용) -->
+    <section class="privacy-notice content-card">
+        <h3>사이트 이용 안내 및 개인정보 처리방침</h3>
+        <p>본 사이트는 구글 애드센스 광고를 송출하며, 서비스 최적화를 위해 쿠키를 사용할 수 있습니다. 사용자의 문의 이메일 정보는 문의 응대 목적으로만 사용되며 별도로 저장되지 않습니다.</p>
+    </section>
+</main>
 
 <footer>
-    <p>© 2026 Pefe Fan Page</p>
+    <div class="container">
+        <p>© 2026 Pepe Archive - All Rights Reserved.</p>
+        <p>Created for Internet Culture Research & Fan Art appreciation.</p>
+    </div>
 </footer>
 
 <script src="main.js"></script>
